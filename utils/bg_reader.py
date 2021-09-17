@@ -2,14 +2,11 @@ import mimetypes
 import cv2
 import numpy as np
 
-import myutils
-
-
 def get_extensions(type='image'):
     return tuple(k for k, v in mimetypes.types_map.items()
                  if v.startswith(type + '/'))
 
-class Background:
+class BackgroundReader:
     def __init__(self, src):
         self.src = src
         if src is None:

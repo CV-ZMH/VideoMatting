@@ -1,8 +1,4 @@
-from tqdm import tqdm
-
 import cv2
-import numpy as np
-import matplotlib.pyplot as plt
 import torch
 import torch.nn as nn
 
@@ -19,10 +15,10 @@ class Predictor:
         h, w = image.shape[:2]
         if w >= h:
             rh = 512
-            rw = int(w / h * 512)
+            rw = int((w / h) * 512)
         else:
             rw = 512
-            rh = int(h / w * 512)
+            rh = int((h / w) * 512)
         self.inp_h = rh - rh % 32
         self.inp_w = rw - rw % 32
 

@@ -1,0 +1,5 @@
+fire
+opencv-python
+moviepy
+rich
+numpy
