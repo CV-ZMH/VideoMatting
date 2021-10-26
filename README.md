@@ -20,3 +20,15 @@ python demo.py \
 --weight <model_file_path> \
 --demo_mode  
 ```
+
+## Citation
+
+```bibtex
+@article{MODNet,
+  author = {Zhanghan Ke and Kaican Li and Yurou Zhou and Qiuhua Wu and Xiangyu Mao and Qiong Yan and Rynson W.H. Lau},
+  title = {Is a Green Screen Really Necessary for Real-Time Portrait Matting?},
+  journal={ArXiv},
+  volume={abs/2011.11961},
+  year = {2020},
+}
+```
