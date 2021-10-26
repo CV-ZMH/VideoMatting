@@ -45,8 +45,4 @@ class Predictor:
         inp_tensor = inp_tensor.permute(2, 0, 1).to(self.device)
         inp_tensor = (inp_tensor - 127.5) / 127.5 # normalize (mean=0.5 / std=0.5)
         return inp_tensor.unsqueeze_(0)
-
-    # def _post_process(self, image, bg, matte):
-    #     # blend = matte * np.full(image.shape, 255.0)
-    #     blend = matte * image + np.full(image.shape, 0)
-    #     return blend
+ 

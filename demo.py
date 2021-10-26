@@ -17,11 +17,11 @@ def main(source, background, weight, demo_mode=False, show=False):
     runner.run(show=show)
 
 def test():
-    source = '/home/zmh/Desktop/HDD/Workspace/dev/Segmentation/test_data/ko_chan_hd.mp4'
-    background = '/home/zmh/Desktop/HDD/Workspace/dev/Segmentation/test_data/cybertruck_merge.mp4'
+    source = '/home/zmh/Desktop/HDD/workspace/segmentation-projects/test-data/ko_chan_hd.mp4'
+    background = '/home/zmh/Desktop/HDD/workspace/segmentation-projects/test-data/nature_cut.mp4'
     weight = 'weights/modnet_webcam_portrait_matting.ckpt'
-    main(source, background, weight, demo_mode=False, show=True)
+    main(source, background, weight, demo_mode=True, show=False)
 
 if __name__ == '__main__':
-    #test()
+    # test()
     Fire(main)
